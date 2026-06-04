@@ -1,0 +1,114 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: var(--neutral-900);
+  padding: 3rem 6rem 4rem 6rem;
+  color: var(--neutral-100);
+}
+
+.contact__title {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  font-weight: var(--semibold);
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact__card {
+  display: flex;
+  align-items: center;
+  gap: .875rem;
+  padding: .75rem;
+  border-radius: 1.25rem;
+  background-color: var(--neutral-800);
+  border: 1px solid var(--neutral-600);
+  max-width: 1080px;
+  margin: 0 max(0px, calc(50% - 540px));
+}
+
+.contact__card__img {
+  background-color: var(--rose-300);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.25rem;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.contact__card_details {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+
+.contact__card_details__link {
+  text-decoration: underline;
+  color: var(--neutral-300) !important;
+  font-size: .75rem;
+  transition: .1s;
+}
+
+.contact__card_details__link [class^="material-"] {
+  font-size: inherit;
+}
+
+.contact__card_details__link:hover {
+  color: var(--neutral-100) !important;
+}
+
+.contact__card__btn {
+  padding: .75rem 1.5rem;
+  border-radius: .75rem;
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
+  font-weight: var(--semibold);
+  font-size: .875rem;
+  transition: .3s;
+}
+
+.contact__card__btn:hover {
+  background-color: var(--neutral-300);
+  color: var(--neutral-900);
+}
+
+.contact__card__btn:active {
+  color: var(--neutral-900);
+  background-color: var(--neutral-400);
+}
+
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1.5rem;
+  }
+  
+  .contact__title {
+    font-size: 1.375rem;
+  }
+  
+  .contact__card {
+    padding: .675rem;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .contact__card_details {
+    width: 100%;
+    overflow: hidden;
+    padding-right: 0;
+  }
+  
+  .contact__card_details p {
+    font-size: .875rem;
+    width: 100%;
+  }
+  
+  .contact__card_details__link {
+    font-size: .75rem;
+  }
+}

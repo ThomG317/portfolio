@@ -1,0 +1,81 @@
+:root {
+  /* Teal — Primary */
+  --teal-100: #E8F2F2;
+  --teal-200: #C4DCDD;
+  --teal-300: #96BFC1;
+  --teal-400: #5E9497;
+  --teal-500: #2F6365;
+  --teal-600: #1E4547;
+  --teal-700: #122A2B;
+  --teal-800: #091516;
+  --teal-900: #040B0C;
+  
+  /* Rose — Accent */
+  --rose-100: #F7EFF1;
+  --rose-200: #EDD5DA;
+  --rose-300: #D9AEBA;
+  --rose-400: #C8909F;
+  --rose-500: #B37D8B;
+  --rose-600: #8C5663;
+  --rose-700: #663540;
+  --rose-800: #401C24;
+  --rose-900: #200D12;
+  
+  /* Neutral — Warm crème to dark (adjusted ramp) */
+  --white: #FFFFFF;
+  --neutral-100: #F3F0EC;
+  --neutral-200: #E3DED7;
+  --neutral-300: #CAC3BB;
+  --neutral-400: #AEA49E;
+  --neutral-500: #91847C;
+  --neutral-600: #766560;
+  --neutral-700: #5A4D49;
+  --neutral-800: #4A3F3C;
+  --neutral-900: #382E2C;
+  
+  
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Work Sans', system-ui, -apple-system, sans-serif;
+  --semibold: 600;
+}
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  line-height: 1.25 !important;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--neutral-100);
+  color: var(--neutral-800);
+}
+
+a {
+  text-decoration: none;
+}
+
+a, a:hover, a:visited, a:active {
+  color: unset;
+}
+
+a, button, [role="button"] {
+  outline: 3px solid transparent;
+  outline-offset: 2px;
+}
+
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
+  outline-color: var(--rose-500);
+}
+
+article > div {
+  max-width: 1080px;
+}

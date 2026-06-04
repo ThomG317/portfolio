@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Thomas Gaubert — Développeur Frontend & UI/UX Designer</title>
+		<meta
+			content="Je conçois et développe des interfaces produits. Design System, Vue.js, Accessibilité. 6 ans en Développement Frontend & UI/UX Design."
+			name="description">
+		<link href="https://fonts.googleapis.com" rel="preconnect">
+		<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+			rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+		
+		<!-- Stylesheets -->
+		<link href="css/global.css" rel="stylesheet">
+		<link href="css/tag.css" rel="stylesheet">
+		<link href="css/navigation.css" rel="stylesheet">
+		<link href="css/hero.css" rel="stylesheet">
+		<link href="css/case-studies.css" rel="stylesheet">
+		<link href="css/about.css" rel="stylesheet">
+		<link href="css/contact.css" rel="stylesheet">
+	</head>
+	<body>
+		
+		<nav class="navigation">
+			<a class="navigation__title" href="index.html">
+				<span class="navigation__title__stress">Thomas</span>
+				Gaubert
+			</a>
+			<div class="navigation__links">
+				<a class="navigation__links__link" href="#case-studies">Case studies</a>
+				<a class="navigation__links__link" href="#about">À propos</a>
+				<a class="navigation__links__link" href="#contact">Contact</a>
+			</div>
+		</nav>
+		
+		<main>
+			
+			<article class="hero">
+				<div class="hero__text">
+					<h1 class="hero__title">
+						<span class="hero__title__stress">Thomas Gaubert</span><br>
+						Je conçois et développe des interfaces produits
+					</h1>
+					<div class="hero__tags">
+						<div class="tag">Design System</div>
+						<div class="tag">Vue.js</div>
+						<div class="tag">Accessibilité</div>
+					</div>
+				</div>
+				<div class="hero__subtitle">6 ans en Développement Frontend & UI/UX Design</div>
+				<div class="hero__button-group">
+					<a class="hero__btn -primary" href="#case-studies">Case Studies</a>
+					<a class="hero__btn" href="#about">À propos</a>
+				</div>
+			</article>
+			
+			<article class="case-studies" id="case-studies" style="background-color: var(--teal-600);">
+				<h2 class="case-studies__title">Case studies</h2>
+				<div class="case-studies__row">
+					
+					<a class="case-study" href="./pages/arcs.html">
+						<div class="case-study__header">
+							<img alt="logo ARCS" class="case-study__logo" src="./assets/arcs-logo.png">
+							ARCS
+						</div>
+						<div class="case-study__screens">
+							<img alt="ARCS - écran tableau de bord" class="case-study__screen" src="./assets/arcs-screen.png"/>
+						</div>
+						<p class="case-study__description">
+							Centraliser la gestion des adhésions et activités d'une association
+							multi-centres
+						</p>
+						<div class="case-study__tags">
+							<div class="tag">UI/UX Design</div>
+							<div class="tag">Dev Frontend</div>
+						</div>
+					</a>
+					
+					<a class="case-study" href="./pages/zenipark.html">
+						<div class="case-study__header">
+							<img alt="logo Zenipark" class="case-study__logo" src="./assets/zenipark-logo.png">
+							Zenipark
+						</div>
+						<div class="case-study__screens">
+							<img alt="Zenipark - écran de réservation des places de parking" class="case-study__screen"
+							     src="./assets/zenipark-screen-1.png"/>
+							<img alt="Zenipark - formulaire pour réserver une place" class="case-study__screen"
+							     src="./assets/zenipark-screen-2.png"/>
+						</div>
+						<p class="case-study__description">
+							Audit ergonomique d’une web app de réservation de place de parking
+						</p>
+						<div class="case-study__tags">
+							<div class="tag">UI/UX Design</div>
+							<div class="tag">Dev Frontend</div>
+						</div>
+					</a>
+				
+				</div>
+			</article>
+			
+			<article class="about" id="about">
+				<div class="about__header">
+					<div class="about__header__img">
+						<img alt="Photo de Thomas" src="assets/thomas.png">
+					</div>
+					<div class="about__header__text">
+						<h2 class="about__title">Thomas Gaubert</h2>
+						<div class="about__header__tags">
+							<div class="tag">Développeur Frontend</div>
+							<div class="tag">UI/UX Designer</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="about__content">
+					<p>
+						Développeur frontend et concepteur UI/UX depuis 2018, j'ai construit un profil hybride entre code et design
+						au fil de mes missions. D'abord sur le code, puis sur la conception UI/UX — jusqu'à porter la responsabilité
+						design sur des projets entiers.
+					</p>
+					<p>
+						Ce qui me motive, c'est d'intervenir au-delà de l'exécution : cadrer les besoins, challenger les choix
+						techniques, accompagner les équipes. Côté dev comme côté design.
+					</p>
+					<p>
+						Mon fil rouge : comprendre les besoins des utilisateurs·rices et concevoir des solutions adaptées.
+					</p>
+				</div>
+				
+				<div class="about__footer">
+					<a class="cv-btn" href="assets/cv.pdf" role="link" tabindex="0" target="_blank">
+						<div class="cv-btn__icon">
+							<span class="material-symbols-outlined">description</span>
+						</div>
+						<div class="cv-btn__text">
+							<p class="cv-btn__text__title">
+								Voir mon CV
+							</p>
+							<p class="cv-btn__text__subtitle">
+								Parcours détaillé et compétences techniques
+							</p>
+						</div>
+						<span class="cv-btn__arrow material-symbols-outlined">arrow_forward_ios</span>
+					</a>
+					
+					<div class="about__skills">
+						<div class="about__skills__row">
+							Dev :
+							<div class="tag -secondary">Vue.js</div>
+							<div class="tag -secondary">Typescript</div>
+							<div class="tag -secondary">Storybook</div>
+						</div>
+						
+						<div class="about__skills__row">
+							Design :
+							<div class="tag -secondary">Figma</div>
+							<div class="tag -secondary">Design System</div>
+							<div class="tag -secondary">Accessibilité</div>
+						</div>
+					</div>
+				
+				</div>
+			</article>
+		
+		</main>
+		
+		<footer class="contact" id="contact">
+			<h2 class="contact__title">Restons en contact ?</h2>
+			<div class="contact__card">
+				<img alt="Photo de Thomas" class="contact__card__img" src="assets/thomas.png">
+				<div class="contact__card_details">
+					<p>thomas.gaubert49@gmail.com</p>
+					<a class="contact__card_details__link" href="http://www.linkedin.com/in/thomas-gaubert" target="_blank">Retrouvez-moi
+						aussi sur LinkedIn
+						<span class="material-symbols-outlined">open_in_new</span>
+					</a>
+				</div>
+				<a class="contact__card__btn" href="mailto:thomas.gaubert49@gmail.com">Me contacter</a>
+			</div>
+		</footer>
+	
+	</body>
+</html>

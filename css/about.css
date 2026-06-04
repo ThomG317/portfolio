@@ -1,0 +1,166 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem;
+}
+
+.about__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem
+}
+
+.about__header__img {
+  display: flex;
+  background-color: var(--teal-500);
+  justify-content: center;
+  align-items: flex-end;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 3rem;
+}
+
+.about__header__img img {
+  height: 7rem;
+  width: 6rem;
+  object-fit: cover;
+  object-position: top center;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.about__header__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem
+}
+
+.about__title {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: var(--semibold);
+}
+
+.about__header__tags {
+  display: flex;
+  gap: .75rem;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about__content p {
+  line-height: 1.5;
+}
+
+.about__footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  
+}
+
+.cv-btn {
+  flex: 1 1 24rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--neutral-300);
+  border-radius: 1.25rem;
+  padding: .75rem 1rem .75rem .75rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.cv-btn:hover {
+  background-color: var(--neutral-200);
+}
+
+.cv-btn:hover .cv-btn__icon {
+  background-color: var(--rose-300);
+}
+
+.cv-btn:active {
+  border-color: var(--neutral-400);
+  background-color: var(--neutral-300);
+}
+
+.cv-btn:active .cv-btn__icon {
+  background-color: var(--rose-400);
+}
+
+.cv-btn__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: .75rem;
+  background-color: var(--rose-200);
+  transition: .3s;
+}
+
+.cv-btn__icon [class^="material-"] {
+  color: var(--rose-700);
+}
+
+.cv-btn__text {
+  display: flex;
+  flex-direction: column;
+  gap: .125rem;
+  width: 100%;
+}
+
+.cv-btn__text__title {
+  font-weight: var(--semibold);
+}
+
+.cv-btn__text__subtitle {
+  font-size: .875rem;
+  color: var(--neutral-600);
+}
+
+.cv-btn__arrow {
+  font-size: 1.25rem;
+}
+
+.about__skills {
+  flex: 1 1 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem
+}
+
+.about__skills__row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+  font-family: var(--font-serif);
+  font-weight: var(--semibold);
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1.5rem;
+  }
+  
+  .about__header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .about__header__text {
+    gap: .5rem;
+  }
+}

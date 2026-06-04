@@ -1,0 +1,133 @@
+.case-studies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 4rem;
+  color: var(--white)
+}
+
+.case-studies__title {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  font-weight: var(--semibold);
+}
+
+.case-studies__row {
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.case-study {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: min(380px, 100%);
+  border: 1px solid var(--teal-400);
+  background-color: var(--teal-500);
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  transition: .3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.case-study:hover {
+  transform: translateY(-.25rem);
+  background-color: var(--teal-400);
+  border-color: var(--teal-300);
+}
+
+.case-study:hover .tag {
+  border-color: var(--teal-300);
+}
+
+.case-study:active {
+  transform: translateY(0);
+  background-color: var(--teal-500);
+  border-color: var(--teal-400);
+}
+
+.case-study__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-serif);
+  font-weight: var(--semibold);
+  font-size: 1.25rem;
+}
+
+.case-study__logo {
+  background-color: var(--white);
+  color: var(--teal-500);
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: var(--font-sans);
+  height: 3rem;
+  width: 3rem;
+  border-radius: .75rem;
+}
+
+.case-study__screens {
+  display: flex;
+  justify-items: flex-start;
+  flex-shrink: 0;
+  gap: 1.5rem;
+  height: 320px;
+}
+
+.case-study__screen {
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+.case-study__description {
+  font-size: 1rem;
+  color: var(--teal-200);
+  flex-grow: 1;
+}
+
+.case-study__tags {
+  display: flex;
+  gap: .5rem;
+}
+
+.case-study__tags .tag {
+  background-color: unset;
+  border-color: var(--teal-400);
+  color: var(--teal-200);
+  transition: .3s;
+  text-align: left;
+}
+
+.case-study:nth-child(2) .case-study__screen {
+  border-radius: 1rem 1rem 0 0;
+}
+
+@media (max-width: 768px) {
+  
+  .case-studies {
+    padding: 3rem 1.5rem;
+    gap: 2rem;
+  }
+  
+  .case-studies__title {
+    font-size: 1.5rem;
+  }
+  
+  .case-study {
+    padding: .8rem;
+    border-radius: 1.25rem;
+  }
+  
+  .case-study__screens {
+    display: none;
+  }
+}
+
