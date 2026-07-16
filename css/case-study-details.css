@@ -41,6 +41,12 @@
 }
 
 .case-study-details__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: bold;
   height: 3rem;
   width: 3rem;
   border-radius: .75rem;

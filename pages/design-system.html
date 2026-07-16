@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-		<title>Thomas Gaubert | Case Study - Zenipark</title>
+		<title>Thomas Gaubert | Case Study - Design System</title>
 		<link href="../favicon.ico" rel="icon" type="image/x-icon">
 		<meta
-			content="Détail du Case Study Zenipark, application de réservation de place de parking"
+			content="Détail du Case Study Design System"
 			name="description">
 		<link href="https://fonts.googleapis.com" rel="preconnect">
 		<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -44,12 +44,13 @@
 				</a>
 				
 				<div class="case-study-details__header__details">
-					<img alt="Logo Zenipark" class="case-study-details__logo" src="../assets/zenipark-logo.png">
+					<span class="case-study-details__logo">DS</span>
 					<div class="case-study-details__header__details__text">
-						<h1 class="case-study-details__header__details__title">Zenipark</h1>
+						<h1 class="case-study-details__header__details__title">Design System</h1>
 						<p class="case-study-details__header__details__description">
-							Audit ergonomique et refonte d'une web app de réservation de parking interne <br>
-							<span class="case-study-details__header__details__keywords">UI/UX Design · Dev Frontend — Vue.js, TypeScript, Figma — Équipe de 2 + atelier utilisateurs</span>
+							Concevoir un socle design unifié pour les applications internes d'une ESN <br>
+							<span
+								class="case-study-details__header__details__keywords">UI/UX Design — Figma — Initiative personnelle</span>
 						</p>
 					</div>
 				</div>
@@ -66,21 +67,10 @@
 					<div class="case-study-details__step__content">
 						<div class="case-study-details__step__content__text">
 							<h2>Le problème</h2>
-							<p>Application mobile-only utilisée sur desktop, problèmes d'ergonomie repérés au quotidien. J'ai initié
-								un audit ergonomique pour formaliser les constats et proposer une refonte.</p>
+							<p>Plusieurs applications internes sans cohérence : palettes, typographies et composants différents d'un
+								projet à l'autre. Pas de librairie partagée. Les équipes en intercontrat ont peu de temps — il est perdu
+								à recréer les mêmes éléments au lieu de se concentrer sur le métier.</p>
 						</div>
-						
-						<div class="case-study-details__step__content__screens">
-							<a href="../assets/screenshots/zenipark-screen-1.png" target="_blank">
-								<img alt="Ancien écran de sélection de place de parking"
-								     src="../assets/screenshots/zenipark-screen-1.png"/>
-							</a>
-							<a href="../assets/screenshots/zenipark-screen-2.png" target="_blank">
-								<img alt="Ancien écran de réservation d'une place de parking"
-								     src="../assets/screenshots/zenipark-screen-2.png"/>
-							</a>
-						</div>
-					
 					</div>
 				</div>
 				
@@ -92,18 +82,11 @@
 					
 					<div class="case-study-details__step__content">
 						<div class="case-study-details__step__content__text">
-							<h2>L'audit</h2>
-							<p>Évaluation de 20 critères ergonomiques sur 4 parcours (connexion, réservation, gestion, ouverture
-								garage). Résultats : flux de connexion bloquant, confusion entre visualisation et réservation sur un
-								même écran, bouton garage indistinguable de la navigation.</p>
+							<h2>L'approche</h2>
+							<p>Partir de zéro pour construire un socle réutilisable. Définition des design tokens (couleurs,
+								typographies), déclinés en mode clair et sombre. Conception de l'ensemble des composants de base :
+								boutons, inputs, selects, modals, cards, notifications, etc.</p>
 						</div>
-						
-						<div class="case-study-details__step__content__screens">
-							<a href="../assets/screenshots/zenipark-screen-3.png" target="_blank">
-								<img alt="Capture d'écran de l'audit ergonomique" src="../assets/screenshots/zenipark-screen-3.png"/>
-							</a>
-						</div>
-					
 					</div>
 				</div>
 				
@@ -115,9 +98,20 @@
 					
 					<div class="case-study-details__step__content">
 						<div class="case-study-details__step__content__text">
-							<h2>L'atelier</h2>
-							<p>Tri de cartes avec les utilisateurs pour repenser la navigation. Brainstorm pour concevoir une
-								fonctionnalité de covoiturage entre collègues.</p>
+							<h2>Design Token & Composants</h2>
+							<p>Mise en place d’une palette de couleurs et de Design Tokens semantique (2 palettes : light/dark mode).
+								Création des composants de bases pour l’affichage, les formulaires et les actions.</p>
+						</div>
+						
+						<div class="case-study-details__step__content__screens">
+							<a href="../assets/screenshots/ds-screen-2.png" target="_blank">
+								<img alt="Assemblage de design tokens"
+								     src="../assets/screenshots/ds-screen-2.png"/>
+							</a>
+							<a href="../assets/screenshots/ds-screen-1.png" target="_blank">
+								<img alt="Assemblage de composants"
+								     src="../assets/screenshots/ds-screen-1.png"/>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -131,22 +125,19 @@
 					<div class="case-study-details__step__content">
 						<div class="case-study-details__step__content__text">
 							<h2>Le résultat</h2>
-							<p> Maquettes mobile-first redessinées sur Figma, conformes RGAA. Version desktop ajoutée. Développement
-								en binôme en Vue.js + TypeScript.</p>
+							<p>Refonte d'écrans d'applications existantes avec le DS pour valider sa cohérence et son
+								applicabilité.
+							</p>
 						</div>
 						
 						<div class="case-study-details__step__content__screens">
-							<a href="../assets/screenshots/zenipark-screen-4.png" target="_blank">
-								<img alt="Nouvel écran de sélection de place de parking"
-								     src="../assets/screenshots/zenipark-screen-4.png"/>
+							<a href="../assets/screenshots/ds-screen-3.png" target="_blank">
+								<img alt="Refonte application FAQ avant/après"
+								     src="../assets/screenshots/ds-screen-3.png"/>
 							</a>
-							<a href="../assets/screenshots/zenipark-screen-5.png" target="_blank">
-								<img alt="Nouvel écran de réservation d'une place de parking"
-								     src="../assets/screenshots/zenipark-screen-5.png"/>
-							</a>
-							<a href="../assets/screenshots/zenipark-screen-6.png" target="_blank">
-								<img alt="Nouvel écran de consultation des covoiturages disponibles"
-								     src="../assets/screenshots/zenipark-screen-6.png"/>
+							<a href="../assets/screenshots/ds-screen-4.png" target="_blank">
+								<img alt="Refonte application Feedback avant/après"
+								     src="../assets/screenshots/ds-screen-4.png"/>
 							</a>
 						</div>
 					
