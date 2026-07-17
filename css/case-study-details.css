@@ -129,6 +129,15 @@
   flex-wrap: wrap;
 }
 
+.case-study-details__step__content__screens iframe {
+  border-radius: .875rem;
+  border: 1px solid var(--neutral-200);
+  box-shadow: 0 4px 16px rgba(74, 63, 60, 4%);
+  height: 380px;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
 .case-study-details__step__content__screens a {
   position: relative;
   border-radius: .875rem;
